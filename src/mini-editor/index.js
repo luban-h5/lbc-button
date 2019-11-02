@@ -20,7 +20,7 @@ export default {
   },
   render (h) {
     return (
-      <a-layout id="components-layout-demo-top-side" style="height: 100%">
+      <a-layout>
         <a-layout-header class="header">
           <div class="logo"><span class="text" style={{ color: 'white' }}>鲁班H5组件开发脚手架</span></div>
         </a-layout-header>
@@ -38,21 +38,3 @@ export default {
     )
   }
 }
-
-// #components-layout-demo-top-side .logo {
-//   width: 180px;
-//   height: 31px;
-//   /* background: rgba(255, 255, 255, 0.2); */
-//   margin: 16px 28px 16px 0;
-//   float: left;
-//   position: relative;
-
-// }
-
-// .text {
-//   position: absolute;
-//   top: -16px;
-//   color: white;
-//   width: 100%;
-//   text-align: center;
-// }
