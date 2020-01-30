@@ -4,7 +4,7 @@
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name lbc-button ./src/component/entry.js",
+    "build": "vue-cli-service build --target lib --name lbc-button ./src/component/index.js",
     "lint": "vue-cli-service lint",
     "publish": "yarn build && npm publish --access public"
   },

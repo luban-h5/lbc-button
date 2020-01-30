@@ -1,4 +1,13 @@
-import LbpComponent from '../component/entry.js'
+/*
+ * @Author: ly525
+ * @Date: 2019-11-02 10:55:15
+ * @LastEditors: ly525
+ * @LastEditTime: 2020-01-30 16:07:51
+ * @FilePath: /lbc-button/src/mini-editor/index.js
+ * @Github: https://github.com/ly525/luban-h5
+ * @Description: Do not edit
+ */
+import LbpComponent from '../component/index.js'
 
 import PropsPanel from './panels/props.js'
 import Element from './models/element.js'
