@@ -1,6 +1,6 @@
 {
   "name": "@luban-h5/lbc-button",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -11,6 +11,7 @@
   "main": "dist/lbc-button.umd.min.js",
   "dependencies": {
     "@luban-h5/lbs-text-align": "^0.0.3",
+    "@luban-h5/plugin-common-props": "^0.0.1",
     "ant-design-vue": "^1.2.4",
     "core-js": "^3.3.2",
     "font-awesome": "4.7.0",

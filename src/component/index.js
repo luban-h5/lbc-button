@@ -1,7 +1,7 @@
-import editorConfig from './editor'
+import commonProps from '@luban-h5/plugin-common-props'
 
-const LubanComponent = {
-  name: 'lbc-button',
+export default {
+  name: 'lbp-button',
   render () {
     const {
       color,
@@ -32,71 +32,15 @@ const LubanComponent = {
       >{text}</button>)
   },
   props: {
-    text: {
-      type: String,
-      default: '按钮'
-    },
-    type: {
-      type: String,
-      default: 'text'
-    },
-    placeholder: {
-      type: String,
-      default: '请填写提示文字'
-    },
-    required: {
-      type: Boolean,
-      default: false
-    },
-    disabled: {
-      type: Boolean,
-      default: false
-    },
-    backgroundColor: {
-      type: String,
-      default: 'transparent'
-    },
-    color: {
-      type: String,
-      default: 'black'
-    },
-    fontSize: {
-      type: Number,
-      default: 14
-    },
-    lineHeight: {
-      type: Number,
-      default: 1
-    },
-    borderWidth: {
-      type: Number,
-      default: 1
-    },
-    borderRadius: {
-      type: Number,
-      default: 0
-    },
-    borderColor: {
-      type: String,
-      default: '#ced4da'
-    },
-    textAlign: {
-      type: String,
-      default: 'center'
-    }
-  },
-  editorConfig
+    text: commonProps.text(),
+    vertical: commonProps.vertical,
+    backgroundColor: commonProps.backgroundColor,
+    color: commonProps.color,
+    fontSize: commonProps.fontSize,
+    lineHeight: commonProps.lineHeight,
+    borderWidth: commonProps.borderWidth,
+    borderRadius: commonProps.borderRadius,
+    borderColor: commonProps.borderColor,
+    textAlign: commonProps.textAlign()
+  }
 }
-
-const install = function (Vue, config = {}) {
-  Vue.component(LubanComponent.name, LubanComponent)
-}
-
-// auto install
-if (typeof window !== 'undefined' && window.Vue) {
-  install(window.Vue)
-}
-
-LubanComponent.install = install
-
-export default LubanComponent
